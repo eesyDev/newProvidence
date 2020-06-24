@@ -6,6 +6,10 @@
     width: 1100px;
     margin: 0 auto;
 }
+button, input {
+    outline: none;
+    font-family: sans-serif;
+}
 .header.active {
     background-color: #ffffff;
     padding: 24px 0;
@@ -26,6 +30,13 @@
         height: 13px;
         justify-content: space-between;
         align-items: center;
+        ul {
+            li {
+                a:hover {
+                    color: #267df4;
+                }
+            }
+        }
         &-left {
             margin-left: 50px;
             display: flex;
@@ -168,7 +179,10 @@
         opacity: 0.5;
         border: 1.0px solid #26272d;
         border-radius: 25px;
-        padding: 20px 30px;
+        padding: 20px 40px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
     }
 }
 .time {
@@ -424,11 +438,11 @@
         background-color: #131315;
         border-radius: 30px;
         margin: 22px auto 0;
-        font-family: Lato;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 24px;
         font-weight: 400;
         color: #ffffff;
+        border: none;
         .app-store {
             font-size: 23px;
             line-height: 22px;
@@ -504,7 +518,6 @@
         margin: 0 45px;
         padding: 0;  
         cursor: pointer;
-        opacity: 0.3;
         &:nth-child(1) button {
             font-size: 0;
             line-height: 0;
@@ -518,6 +531,7 @@
             border: 0;
             outline: none;
             background-image: url(../images/user1.jpg);
+            opacity: 0.3;
             
         }
         &:nth-child(2) button {
@@ -533,6 +547,7 @@
             border: 0;
             outline: none;
             background-image: url(../images/user2.jpg);
+            opacity: 0.3;
         }
         &:nth-child(3) button {
             font-size: 0;
@@ -547,12 +562,16 @@
             border: 0;
             outline: none;
             background-image: url(../images/user3.jpg);
+            opacity: 0.3;
         }
     }
 }
 .slick-dots li.slick-active button {
     transform: scale(1.5, 1.5);
     transition: 1s;
+    opacity: 1;
+}
+.slick-active {
     opacity: 1;
 }
 .plan {
@@ -576,6 +595,7 @@
             letter-spacing: 0.1em;
             color: #26272d;
             margin-top: 67px;
+            padding: 0 0 20px 102px;
         }
         .switch {
             margin-bottom: 70px;
@@ -672,6 +692,7 @@
                         height: 28px;
                         box-sizing: border-box;
                         margin: 29px auto 0;
+                        text-align: center;
                     }
                     .phrase {
                         margin-top: 56px;
@@ -918,6 +939,9 @@
     padding: 89px 0 110px;
     .wrapper {
         display: flex;
+    }
+    a:hover, i:hover {
+        color: #267df4;
     }
     &-descr {
         width: 245px;
