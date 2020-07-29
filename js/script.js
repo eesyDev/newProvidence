@@ -73,6 +73,10 @@ $(document).ready(function(){
             {
                 breakpoint: 768,
                 slidesToShow: 1
+            },
+            {
+                breakpoint: 599,
+                settings: {arrows: false}
             }
         ]
     });
