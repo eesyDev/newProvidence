@@ -65,5 +65,19 @@ $(document).ready(function(){
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></img></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {arrows: false}
+            },
+            {
+                breakpoint: 768,
+                slidesToShow: 1
+            },
+            {
+                breakpoint: 599,
+                settings: {arrows: false}
+            }
+        ]
     });
 });

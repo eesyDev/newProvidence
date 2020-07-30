@@ -5,6 +5,7 @@
 .container {
     width: 1100px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 button, input {
     outline: none;
@@ -186,7 +187,7 @@ button, input {
     }
 }
 .time {
-    min-height: 500px;
+    min-height: 450px;
     padding: 142px 0 167px;
     .wrapper {
         display: flex;
@@ -215,7 +216,7 @@ button, input {
     }
 }
 .protected {
-    min-height: 800px;
+    min-height: 770px;
     position: relative;
     &-item {
         width: 469px;
@@ -266,8 +267,8 @@ button, input {
     }
 }
 .map {
-    min-height: 500px;
-    padding: 216px 0 198px;
+    min-height: 450px;
+    padding: 120px 0 198px;
     overflow: hidden;
     position: relative;
     &-item {
@@ -1041,3 +1042,5 @@ button, input {
         }
     }
 }
+
+@import 'media';
